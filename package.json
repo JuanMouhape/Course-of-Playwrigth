@@ -1,0 +1,26 @@
+{
+  "name": "curso-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regresion": "npx playwright test test/MoreValidations.spec.js",
+    "webTest": "npx playwright test --grep @Web",
+    "APITest": "npx playwright test --grep @API",
+    "SafariNewConfig": "npx playwright test --config playwright.config1.js --project=webkit",
+    "CucumberRegression" : "npx cucumber-js --tags '@Regresion' --retry 1 --exit --format html:cucumber-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.5.1",
+    "allure-playwright": "^3.0.5",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "exceljs": "^4.4.0"
+  }
+}

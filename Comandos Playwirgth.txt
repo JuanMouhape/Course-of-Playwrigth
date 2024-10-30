@@ -1,0 +1,55 @@
+***Ver y poder ejecutar desde la UI
+ 
+npx playwright test --ui 
+
+***Correr los test con una configuracion especifica 
+ 
+npx playwright test tests/ClientAppPO.spec.js --config playwrigth.congif1.js
+
+***Correr los test con una configuracion especifica y con un browser especifico si tengo mas de uno en el archivo de configuracion
+ 
+npx playwright test tests/ClientAppPO.spec.js --config playwright.config.js --project=Chrome
+
+***Genera reportes en allure, y no los por defecto:
+ 
+npx playwright test tests/MoreValidations.spec.js --config playwright.config.js --project=chrome --reporter=line,allure-playwright
+
+***Genera el reporte
+ 
+allure generate ./allure-results --clean
+
+***Abre el reporte:
+ 
+allure open ./allure-report
+
+***Ejecutar script desde Package.json:
+ 
+npm run <nombreScript>
+
+***Ejecutar un script de JavaScript
+
+node demo.js
+
+***Convertir un script de TypeScript en JavaScript
+
+tsc demo1.ts
+
+***Crear pasos en Cucumber
+
+npx cucumber-js
+
+***Correr algún caso de prueba con un tags en especifico, y que se cierre la ventana del navegador 
+
+npx cucumber-js --tags "@Validations" --exit
+
+***Ejecutar escenarios en paralelo indicando la cantidad 
+
+npx cucumber-js features/Ecommerce.feature --parallel 2 --exit 
+
+***Ejecutar y crear un reporte HTML con un nombre en especifico (Copiar el path y abrirlo en un Browser de Chrome)
+
+npx cucumber-js features/Ecommerce.feature --parallel 2 --exit --format html:cucumber-report.html
+
+***Si falla que ejecute una vez mas el test con el retry=1
+
+npx cucumber-js --tags "@Regresion" --retry 1 --exit --format html:cucumber-report.html

@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Oct 24 16:07:19 ART 2024","Thu Oct 24 16:07:32 ART 2024","12893","chrome","MoreValidations.spec.js","","","","@Web Popup Validations",""
+"passed","Thu Oct 24 16:07:33 ART 2024","Thu Oct 24 16:07:44 ART 2024","11633","chrome","MoreValidations.spec.js","","","","Screenshot & Visual Compasion",""
+"passed","Thu Oct 24 16:07:44 ART 2024","Thu Oct 24 16:07:51 ART 2024","6866","chrome","MoreValidations.spec.js","","","","Visual Testing",""
